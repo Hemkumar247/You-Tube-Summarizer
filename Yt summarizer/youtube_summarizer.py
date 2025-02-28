@@ -23,7 +23,7 @@ def summarize_youtube_transcript(video_id):
         transcript_text += item["text"] + " "
 
     # Step 2: Summarize the transcript using Gemini
-    gemini_api_key = "AIzaSyAJ5ANvamXrVSmiMAIUqBgNpAyJW8lL4fk"
+    gemini_api_key = < your API Key Here >
     genai.configure(api_key=gemini_api_key)
     model = genai.GenerativeModel('gemini-pro')
 
